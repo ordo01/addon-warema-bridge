@@ -21,7 +21,8 @@ WORKDIR /srv
 # RUN npm ci
 RUN npm install
 
-RUN apk del --no-cache --purge .build-deps && rm -rf /root/.npm /root/.cache
+RUN apk del --no-cache --purge .build-deps \
+    && rm -rf /root/.npm /root/.cache
 
 COPY rootfs/ /
 

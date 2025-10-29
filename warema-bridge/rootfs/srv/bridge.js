@@ -1,4 +1,4 @@
-const warema = require('warema-wms-api');
+const warema = require('warema-wms-venetian-blinds');
 var mqtt = require('mqtt')
 
 process.on('SIGINT', function() {
